@@ -1,0 +1,12 @@
+services:
+- name: my-web-service
+  type: web
+  env: python
+  buildCommand: pip install -r requirements.txt
+  startCommand: python app.py
+  envVars:
+    - key: EXAMPLE_ENV_VAR
+      value: hello world
+databases:
+- name: my-database
+  type: postgres
