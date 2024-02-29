@@ -7,6 +7,3 @@ services:
   envVars:
     - key: EXAMPLE_ENV_VAR
       value: hello world
-databases:
-- name: my-database
-  type: postgres
